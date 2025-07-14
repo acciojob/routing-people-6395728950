@@ -14,7 +14,7 @@ const UserList = () => {
        {
         data && data.map((item,index)=>(
             <li key={index}><NavLink to={`/users/${item.id}`}>{item.name}</NavLink></li>
-        ))
+        )) 
        }
     </div>
   )

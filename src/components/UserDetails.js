@@ -14,7 +14,7 @@ const UserDetails = () => {
   return (
     <div>
         {
-            item && (
+            item ? (
                 <div>
                     <p>Name:{item.name}</p>
                     <p>Username:{item.username}</p>
@@ -22,7 +22,7 @@ const UserDetails = () => {
                     <p>Phone:{item.phone}</p>
                     <p>Website:{item.website}</p>
                 </div>
-            )
+            ):(<p>Loading...</p>)
         }
     </div>
   )
